@@ -1,0 +1,19 @@
+<div class="row mt-4">
+
+	<div *ngIf="evenRow" class="col-3">
+		<h5>{{ item.narrow.title }}</h5>
+	</div>
+	<div *ngIf="evenRow" class="col-9">
+		<app-wide-content [item]="item.wide"></app-wide-content>
+	</div>
+
+
+	<div *ngIf="!evenRow" class="col-9">
+		<app-wide-content [item]="item.wide"></app-wide-content>
+	</div>
+	<div *ngIf="!evenRow" class="col-3">
+		<h5>{{ item.narrow.title }}</h5>
+	</div>
+
+</div>
+<hr>

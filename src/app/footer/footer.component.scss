@@ -1,0 +1,45 @@
+@import "../../styles";
+
+.footer {
+	padding: 50px;
+}
+.footer-links {
+	font-size: 0.9rem;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	  }
+}
+
+.footer-address {
+	font-size: 0.9rem;
+}
+
+.footer-social {
+	font-size: 0.9rem;
+
+	svg {
+		width: 10%;
+		margin: 0.7rem;
+	}
+}
+
+.footer-copy {
+	font-size: 0.8rem;
+	text-align: center;
+
+	.copy-msg {
+		margin-bottom: 2rem;
+	}
+
+}
+
+.container {
+	background: $footer-bg;
+}
+
+
+
+

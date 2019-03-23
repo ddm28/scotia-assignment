@@ -1,0 +1,29 @@
+<div class="full-main">
+	<div class="container main-area">
+		<div class="row">
+			<div class="col">
+				<h1 class="mt-5">Ristorante II Fornello</h1>
+				<div class="mt-4 main-content">Simple, fresh ingredients, prepared and cooked with love and passion
+					become truly great dishes, from wood-oven baked Neapolitan style pizzas to pastas, entrees!</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="container">
+	<div *ngFor="let item of content; let i = index;">
+		<app-main-content [item]="item" [indx]="i"></app-main-content>
+	</div>
+
+	<div class="row">
+		<div class="col-12">Our Menu:</div>
+		<div *ngFor="let menuItem of foodMenu" class="col-2 mt-3">
+			<h6 class="menu-item">{{ menuItem.name }}</h6>
+			<div>{{ menuItem.price }}</div>
+		</div>
+	</div>
+</div>
+
+
+ 
